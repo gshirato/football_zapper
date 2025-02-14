@@ -15,16 +15,22 @@ altair==5.5.0
 attrs==25.1.0
     # via jsonschema
     # via referencing
+authlib==1.4.1
+    # via football-zapper
 blinker==1.9.0
     # via streamlit
 cachetools==5.5.1
     # via streamlit
 certifi==2025.1.31
     # via requests
+cffi==1.17.1
+    # via cryptography
 charset-normalizer==3.4.1
     # via requests
 click==8.1.8
     # via streamlit
+cryptography==44.0.1
+    # via authlib
 gitdb==4.0.12
     # via gitpython
 gitpython==3.1.44
@@ -61,6 +67,8 @@ protobuf==5.29.3
     # via streamlit
 pyarrow==19.0.0
     # via streamlit
+pycparser==2.22
+    # via cffi
 pydeck==0.9.1
     # via streamlit
 pygments==2.19.1
