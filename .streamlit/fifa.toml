@@ -1,0 +1,9 @@
+[[pages]]
+path = "pages/fifa/agent.py"
+name = "代理人"
+icon = "⚽️"
+
+[[pages]]
+path = "pages/fifa/vision_2020.py"
+name = "FIFAビジョン2020-2023"
+icon = "👀"
