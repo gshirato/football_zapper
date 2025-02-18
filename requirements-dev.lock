@@ -91,8 +91,11 @@ six==1.17.0
     # via python-dateutil
 smmap==5.0.2
     # via gitdb
+st-pages==1.0.1
+    # via football-zapper
 streamlit==1.42.0
     # via football-zapper
+    # via st-pages
 tenacity==9.0.0
     # via streamlit
 toml==0.10.2
