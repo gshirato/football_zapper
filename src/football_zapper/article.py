@@ -2,6 +2,7 @@ import streamlit as st
 import os
 import glob
 
+st.set_page_config(page_title="Football Zapper", page_icon=":tv:", layout="wide")
 st.sidebar.title("Football Zapper")
 
 if "login_attempts" not in st.session_state:
