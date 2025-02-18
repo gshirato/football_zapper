@@ -8,9 +8,7 @@ st.sidebar.title("Football Zapper")
 
 def get_nav_from_category(category):
     folder = ".streamlit"
-    if category == "fifa":
-        return get_nav_from_toml(os.path.join(folder, "fifa.toml"))
-    raise ValueError(f"Unknown category: {category}")
+    return get_nav_from_toml(os.path.join(folder, f"{category}.toml"))
 
 
 if "login_attempts" not in st.session_state:
