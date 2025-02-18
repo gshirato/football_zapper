@@ -1,9 +1,18 @@
 import streamlit as st
 import os
 import glob
+from st_pages import add_page_title, get_nav_from_toml
 
 st.set_page_config(page_title="Football Zapper", page_icon=":tv:", layout="wide")
 st.sidebar.title("Football Zapper")
+
+
+def get_nav_from_category(category):
+    folder = ".streamlit"
+    if category == "fifa":
+        return get_nav_from_toml(os.path.join(folder, "fifa.toml"))
+    raise ValueError(f"Unknown category: {category}")
+
 
 if "login_attempts" not in st.session_state:
     st.session_state["login_attempts"] = 0
@@ -14,7 +23,6 @@ if not st.experimental_user.is_logged_in:
     if st.sidebar.button("Googleでログイン"):
         st.login("google")
     st.stop()
-
 
 allowed_users = st.secrets["auth"].get("allowed_users", [])
 user_email = st.experimental_user.email
@@ -30,7 +38,7 @@ if st.session_state["is_authenticated"]:
 
     root_dir = os.path.abspath(os.path.curdir)
 
-    root_dir = "docs"  # Markdownファイルのルートディレクトリ
+    root_dir = "src/football_zapper/pages"  # Markdownファイルのルートディレクトリ
     categories = [
         d for d in os.listdir(root_dir) if os.path.isdir(os.path.join(root_dir, d))
     ]
@@ -38,25 +46,12 @@ if st.session_state["is_authenticated"]:
     # サイドバーでカテゴリを選択
     selected_category = st.sidebar.selectbox("カテゴリを選択", categories)
 
-    # 選択したカテゴリ内のMarkdownファイルを取得
-    category_path = os.path.join(root_dir, selected_category)
-    md_files = glob.glob(os.path.join(category_path, "*.md"))
+    nav = get_nav_from_category(selected_category)
 
-    if md_files:
-        md_file_names = [os.path.basename(f) for f in md_files]
-        selected_file = st.sidebar.selectbox(
-            "ファイルを選択", md_file_names, format_func=lambda x: x.split(".")[0]
-        )
+    page = st.navigation(nav)
 
-        # 選択したMarkdownファイルを表示
-        with open(
-            os.path.join(category_path, selected_file), "r", encoding="utf-8"
-        ) as f:
-            md_content = f.read()
-
-        st.markdown(md_content, unsafe_allow_html=True)
-    else:
-        st.write("このカテゴリにはMarkdownファイルがありません。")
+    add_page_title(page)
+    page.run()
 
     if st.sidebar.button("Logout"):
         st.logout()
