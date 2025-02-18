@@ -7,3 +7,8 @@ icon = "⚽️"
 path = "pages/fifa/vision_2020.py"
 name = "FIFAビジョン2020-2023"
 icon = "👀"
+
+[[pages]]
+path = "pages/fifa/football_law.py"
+name = "FOOTBALL LAW ANNUAL REVIEW"
+icon = "⚖️"
