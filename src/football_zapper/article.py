@@ -1,6 +1,5 @@
 import streamlit as st
 import os
-import glob
 from st_pages import add_page_title, get_nav_from_toml
 
 st.set_page_config(page_title="Football Zapper", page_icon=":tv:", layout="wide")
