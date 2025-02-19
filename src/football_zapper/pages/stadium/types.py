@@ -59,6 +59,4 @@ st.markdown(
 
 
 st.markdown("## ポッドキャスト")
-audio_url = "https://sports-con.xyz/wp-content/uploads/2025/02/stadium.wav"
-
-st.audio(audio_url)
+st.audio("https://sports-con.xyz/wp-content/uploads/2025/02/stadium.wav")
