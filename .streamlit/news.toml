@@ -1,5 +1,9 @@
-
 [[pages]]
 path = "pages/news/20250318.py"
 name = "20250318"
+icon = "📰"
+
+[[pages]]
+path = "pages/news/20250503.py"
+name = "20250503"
 icon = "📰"

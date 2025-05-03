@@ -32,7 +32,7 @@ else:
         st.stop()
 
 if st.session_state["is_authenticated"]:
-
+    st.write(f"Logged in as {st.experimental_user.name}")
     root_dir = os.path.abspath(os.path.curdir)
 
     root_dir = "src/football_zapper/pages"  # Markdownファイルのルートディレクトリ
