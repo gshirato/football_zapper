@@ -16,7 +16,9 @@ if "login_attempts" not in st.session_state:
 if "is_authenticated" not in st.session_state:
     st.session_state["is_authenticated"] = False
 
+
 if not st.experimental_user.is_logged_in:
+    st.warning("ログインしてください")
     if st.sidebar.button("Googleでログイン"):
         st.login("google")
     st.stop()
@@ -32,7 +34,6 @@ else:
         st.stop()
 
 if st.session_state["is_authenticated"]:
-    st.write(f"Logged in as {st.experimental_user.name}")
     root_dir = os.path.abspath(os.path.curdir)
 
     root_dir = "src/football_zapper/pages"  # Markdownファイルのルートディレクトリ
@@ -50,7 +51,10 @@ if st.session_state["is_authenticated"]:
     add_page_title(page)
     page.run()
 
-    if st.sidebar.button("Logout"):
+    st.sidebar.divider()
+
+    if st.sidebar.button("ログアウト"):
         st.logout()
         st.session_state["is_authenticated"] = False
         st.stop()
+    st.sidebar.write(f"ログイン中: {st.experimental_user.name}")

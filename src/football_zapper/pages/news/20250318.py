@@ -1,6 +1,8 @@
 import streamlit as st
 
-st.audio('https://sports-con.xyz/wp-content/uploads/2025/03/20250318-football-zapper-news.wav')
+st.audio(
+    "https://sports-con.xyz/wp-content/uploads/2025/03/20250318-football-zapper-news.wav"
+)
 
 st.markdown("""
 # スポーツニュース総集編 - 2025年3月18日まで
@@ -160,7 +162,7 @@ st.markdown("""
 
 ---
 
-## 参照文献
+## 参考文献
 1. The Athletic, "Chelsea working through a slump", 2025年2月28日, https://www.nytimes.com/athletic/6163696/2025/02/28/chelsea-slump-behind-the-scenes/
 2. The Athletic, "Victor Wembanyama jersey swap lawsuit", 2025年2月28日, https://www.nytimes.com/athletic/6164949/2025/02/28/victor-wembanyama-jersey-swap-lawsuit/
 3. The Athletic, "Athletic FC Tactics Podcast striker evolution", 2025年2月28日, https://www.nytimes.com/athletic/6166613/2025/02/28/athletic-fc-tactics-podcast-striker-evolution/
@@ -174,6 +176,4 @@ st.markdown("""
 11. The Athletic, "World Cup 2026 concerns over fans US visa wait times", 2024年4月26日, https://www.nytimes.com/athletic/5443321/2024/04/26/world-cup-2026-concerns-over-fans-u-s-visa-wait-times-your-window-might-already-be-closed/
 12. The Athletic, "Liverpool accounts finances Klopp", 2025年2月28日, https://www.nytimes.com/athletic/6165312/2025/02/28/liverpool-accounts-finances-klopp/
 13. The Athletic, "Bayern Munich 125 anniversary Kane Muller US", 2025年2月27日, https://www.nytimes.com/athletic/6160973/2025/02/27/bayern-munich-125-anniversary-kane-muller-us/
-"""
-
-)
+""")
