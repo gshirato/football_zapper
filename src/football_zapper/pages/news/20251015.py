@@ -4,7 +4,7 @@ st.audio(
     "https://sports-con.xyz/wp-content/uploads/2025/10/20251015-football-zapper-news.wav"
 )
 
-st.markdown("""# スポーツニュース総集編 - 2025年10月15日""")
+st.markdown("""# スポーツニュース総集編 - 2025年10月""")
 tabs = st.tabs(
     [
         "選手のストーリーとコンディション",
