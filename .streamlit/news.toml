@@ -12,3 +12,8 @@ icon = "📰"
 path = "pages/news/20251015.py"
 name = "20251015"
 icon = "📰"
+
+[[pages]]
+path = "pages/news/20251026.py"
+name = "20251026"
+icon = "📰"
