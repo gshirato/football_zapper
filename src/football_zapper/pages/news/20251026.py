@@ -40,7 +40,7 @@ with tabs[1]:
 ## サッカーの戦術と選手攻略
 
 ### アーリング・ハーランドを止めるには？：史上最高のストライカー対策
-# URL: https://www.theguardian.com/football/2025/oct/24/how-to-stop-erling-haaland-manchester-city
+URL: https://www.theguardian.com/football/2025/oct/24/how-to-stop-erling-haaland-manchester-city
 
 * マンチェスター・シティの絶対的ストライカー、アーリング・ハーランドは少ないタッチで決定的な仕事をするため、供給遮断やボックス内の動き封じが鍵。
 * 2023年のウルブズはクレイグ・ドーソンのフィジカルなマンマーキングで対応。対抗する守備者のパワーと集中が必要。
@@ -53,7 +53,7 @@ with tabs[1]:
 with tabs[2]:
     st.markdown("""
 ## イスラエルサッカーにおける人種差別チャントの増加とその影響
-# URL: https://www.theguardian.com/football/2025/oct/23/research-reveals-racist-chants-on-rise-in-israeli-football-with-maccabi-tel-aviv-the-worst-offenders
+URL: https://www.theguardian.com/football/2025/oct/23/research-reveals-racist-chants-on-rise-in-israeli-football-with-maccabi-tel-aviv-the-worst-offenders
 
 * **人種差別チャントの急増:** Kick It Out Israelの調査で、2024-25に367件を記録（前季比+67%）。マッカビ・テルアビブのサポーターによるものが最多。
 * **当局の対応への批判:** 取り締まりや対策欠如への批判。暴力は前季比-21%も、差別は悪化。
@@ -68,7 +68,7 @@ with tabs[3]:
 ## サッカー代表チーム監督の交代とワールドカップ予選
 
 ### グラハム・ポッター、スウェーデン代表監督に就任しワールドカップ出場を目指す
-# URL: https://www.theguardian.com/football/2025/oct/20/graham-potter-appointed-sweden-head-coach-world-cup
+URL: https://www.theguardian.com/football/2025/oct/20/graham-potter-appointed-sweden-head-coach-world-cup
 
 * 元ウェストハム監督のグラハム・ポッターが短期契約でスウェーデン代表のヘッドコーチに就任。
 * 残り2試合の予選を指揮し、来夏のW杯出場を狙う。グループ最下位だがNL成績でPOの望み。
@@ -97,7 +97,7 @@ with tabs[5]:
 ## サッカー監督の戦略とキャリア
 
 ### アンジェ・ポステコグルー監督とノッティンガム・フォレストのミスマッチ
-# URL: （なし）
+URL: （なし）
 
 * フォレスト就任からわずか40日で解任。就任当初から「戦術的ミスマッチ」との見方。
 * 前季は堅守速攻で成功も、ポステコグルーは前線プレスと攻撃志向で方向性が逆。
@@ -140,7 +140,7 @@ https://www.theguardian.com/football/2025/oct/25/full-bloom-hearts-ride-to-the-t
 with tabs[8]:
     st.markdown("""
 ## ポルトが大規模なチケット転売組織を摘発
-# URL: https://www.theguardian.com/football/2025/oct/22/porto-dismantle-one-of-biggest-ticket-scalping-networks-uncovered-in-football
+URL: https://www.theguardian.com/football/2025/oct/22/porto-dismantle-one-of-biggest-ticket-scalping-networks-uncovered-in-football
 
 * サッカー界最大級の転売組織の一つを摘発し、不正利用の数百席をクラブ管理下へ回収。試合ごとに数万ユーロの不正利益。
 * 他人情報を悪用した会員登録や年チケ購入、観光客向けに最大800ユーロで転売。偽造券も確認。
